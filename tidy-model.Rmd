@@ -85,3 +85,17 @@ anova(species_lm, species_x_temp_lm)
 After checking for interactions, the species model proved to be more meaningful for making predictions because this comparison produces a p-values far above 0.05 and is not statistically significant.
 
 
+## Modeling Diamond Prices
+
+```{r diamond summary, echo = FALSE}
+summary(diamonds)
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point() +
+  ggtitle("Scatterplot of the Diamonds and carrat size") +
+  xlab('Carat size') +
+  ylab('Price')
+```
+
+There is a positive correlation between the price and carat size of a diamond. It can also be seen that many of the diamonds are right at or above carat size whole numbers.
+
+
